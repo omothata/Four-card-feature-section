@@ -1,6 +1,8 @@
-h1{
-    margin: 0px;
+
+body{
+    justify-items: center;
+    background: hsl(214, 15%, 91%);
 }
-h2{
-    margin: 0px;
-}
+
+
+
