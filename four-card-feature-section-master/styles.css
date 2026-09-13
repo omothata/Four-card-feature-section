@@ -1,8 +1,120 @@
+/*
 
-body{
-    justify-items: center;
-    background: hsl(214, 15%, 91%);
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+*/
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --grey500: hsl(234, 12%, 34%);
+    --grey400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: 'Poppins-thin';
+    src: url('./fonts/Poppins/Poppins-Thin.ttf');
+    font-size: 15px;
+}
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('./fonts/Poppins/Poppins-Bold.ttf');
+    font-size: 15px;
 }
 
+body{
+    background: hsl(214, 15%, 91%);
+    margin: 0px;
+    font-family: 'Poppins-Thin';
+    width: 100%;
+    justify-items: center;
+}
 
+.title{
+    justify-items: center;
+    margin-top: 17vw;
+}
+
+h1, h2{
+    font-size: 2em;
+    margin: 0px;
+}
+
+h2{
+    font-family: 'Poppins-bold';
+    margin-top: -10px;
+}
+
+h4{
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.blocks{
+    justify-content: center;
+    margin-top: 12vw;
+    display: flex;
+    flex-flow: column balance wrap;
+    gap: 50px;
+    margin-bottom: 17vw;
+}
+
+h3{
+    font-family: 'Poppins-bold';
+}
+
+p{
+    font-size: 1em;
+}
+
+div{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 340px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.supervisor{
+    border-top: 5px solid var(--cyan);
+}
+.teamBuilder{
+    border-top: 5px solid var(--red);
+}
+.karma{
+    border-top: 5px solid var(--orange);
+}
+.calculator{
+    border-top: 5px solid var(--blue);
+}
+
+img {
+    margin-left: 80%;
+}
+
+@media (max-width: 479px){
+    .blocks{
+        justify-content: center;
+        flex-flow: column balance wrap;
+    }
+    div{
+        justify-self: center;
+    }
+}
+
+@media (480px <= width < 1200px){
+    .blocks{
+        display: flex;
+        flex-flow: row balance wrap;
+    }
+    .middle{
+        margin: 0px;
+        padding: 0px;
+    }
+}
 
